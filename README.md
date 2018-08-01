@@ -6,9 +6,11 @@ String[] dna = {"ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"};
 
 #Se utilizo
 * Java 1.8
-* Spring boot 2.0
+* Maven
+* Spring Boot 2.0.4
 * Amazon AWS - Elastic Beanstalk
 * Amazon AWS -DynamoDB
+
 
 #Funcionamiento
 Para ejecutar la deteccion se implemento un servicio Rest (Post) que recibe como parametro un JSON como el siguiente:
