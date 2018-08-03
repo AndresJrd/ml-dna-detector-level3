@@ -2,7 +2,7 @@
 Para satisfacer el siguiente pedido 
 
 Encontrar mas de una secuencia de 4 letras iguales, de forma oblicua, horizontal o vertical, como la siguiente
-String[] dna = {"ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"};
+{"dna":["GTTTTT","TCACTG","ATGCGA","GCGTCA","ATGCGA","AGAAGG"]}
 
 #Se utilizo
 * Java 1.8
@@ -15,7 +15,7 @@ String[] dna = {"ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"};
 #Funcionamiento
 Para ejecutar la deteccion se implemento un servicio Rest (Post) que recibe como parametro un JSON como el siguiente:
 
-{"ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"}
+{"dna":["GTTTTT","TCACTG","ATGCGA","GCGTCA","ATGCGA","AGAAGG"]}
 
 http://mercadolibreandresjesus.us-east-2.elasticbeanstalk.com/mutant
 
