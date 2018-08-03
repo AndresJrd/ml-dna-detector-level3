@@ -1,7 +1,7 @@
-package com.nivel3.mlexamfinallevel3;
+package com.nivel2.mlexamfinallevel2;
 
 
-import com.nivel3.mlexamfinallevel3.validator.ValidateDna;
+import com.nivel2.mlexamfinallevel2.validator.ValidateDna;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
@@ -16,28 +16,64 @@ import org.junit.Test;
  * @author AndrésJesús
  */
 public class ValidatorTest {
- String[] dnaMutant =  new String[] {"ATGCCA",
-                                    "CAGTGC",
-                                    "TTCTGG",
-                                    "AAAAAG",
-                                    "CCCCTA",
-                                    "TCGCTG"};
+ String[] dnaMutantI =  new String[] {
+                                        "ATGCCA",
+                                        "CAGTGC",
+                                        "TTCTGG",
+                                        "AAAAAG",
+                                        "CCCCTA",
+                                        "TCGCTG"};
+ String[] dnaMutantII =  new String[]{
+                                        "ATGCGA",
+                                        "CAGTTC",
+                                        "TTATTT",
+                                        "AGTAGG",
+                                        "GTGTAA",
+                                        "TCACTG"};
+ 
+    String[] dnaMutantIII =  new String[]{
+                                        "ATGCGA",
+                                        "CAGTGC",
+                                        "GTTTTT",
+                                        "AGACGG",
+                                        "GGGGGA",
+                                        "TCACTG"};
+ 
+       String[] dnaHumanI =  new String[]  {
+                                            "ATGCGA",
+                                            "CAGTGC",
+                                            "TTATTT",
+                                            "AGACGG",
+                                            "GCGTCA",
+                                            "TCACTG"};
+     String[] dnaHumanII =  new String[]  {
+                                            "AACGAT",
+                                            "TCGGAC",
+                                            "TTATTT",
+                                            "AGACGG",
+                                            "AGTCCG",
+                                            "TCACTG"};
 
- String[] dnaHuman =  new String[] {"ATGCCT", 
-                                    "CAGTGC", 
-                                    "TTCTGG", 
-                                    "AGAAGG", 
-                                    "CCCGTA", 
-                                    "TCGCTG"};
+     String[] dnaHumanIII =  new String[]  {
+                                            "GTTTTT",
+                                            "TCACTG",
+                                            "ATGCGA",
+                                            "GCGTCA",
+                                            "ATGCGA",
+                                            "AGAAGG"};
     @Test
     public void evalMutante(){
         ValidateDna v=new ValidateDna();
-        assertEquals( v.isMutant(dnaMutant),true);
+        assertEquals( v.isMutant(dnaMutantI),true);
+        assertEquals( v.isMutant(dnaMutantII),true);
+        assertEquals( v.isMutant(dnaMutantIII),true);
     }
     
      @Test
     public void evalHumano(){
       ValidateDna v=new ValidateDna();
-        assertEquals( v.isMutant(dnaHuman),false);
+        assertEquals( v.isMutant(dnaHumanI),false);
+        assertEquals( v.isMutant(dnaHumanII),false);
+        assertEquals( v.isMutant(dnaHumanIII),false);
     }
 }
