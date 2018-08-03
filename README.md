@@ -2,6 +2,7 @@
 Para satisfacer el siguiente pedido 
 
 Encontrar mas de una secuencia de 4 letras iguales, de forma oblicua, horizontal o vertical, como la siguiente
+
 {"dna":["GTTTTT","TCACTG","ATGCGA","GCGTCA","ATGCGA","AGAAGG"]}
 
 #Se utilizo
@@ -14,6 +15,7 @@ Encontrar mas de una secuencia de 4 letras iguales, de forma oblicua, horizontal
 
 #Funcionamiento
 Para ejecutar la deteccion se implemento un servicio Rest (Post) que recibe como parametro un JSON como el siguiente:
+
 
 {"dna":["GTTTTT","TCACTG","ATGCGA","GCGTCA","ATGCGA","AGAAGG"]}
 
