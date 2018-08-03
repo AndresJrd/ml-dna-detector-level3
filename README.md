@@ -13,7 +13,7 @@ Encontrar mas de una secuencia de 4 letras iguales, de forma oblicua, horizontal
 * Amazon AWS -DynamoDB
 
 
-#Funcionamiento
+#Funcionamiento en el puerto 5000 para localhost http://localhost:5000/mutant
 Para ejecutar la deteccion se implemento un servicio Rest (Post) que recibe como parametro un JSON como el siguiente:
 
 
