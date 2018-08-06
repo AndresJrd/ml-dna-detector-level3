@@ -70,10 +70,10 @@ public class ValidateDna extends  Thread {
             t2.start();
             t3.start();
             t4.start();
-           
+           /*   esto no va, se colo, era la opcion a synchronized
             t2.join();
             t3.join();
-            t4.join();           
+            t4.join();    */       
                                    
             while((!finalizo)&&(!esMutante)){
             if(getDetections()>eursticDetections){
@@ -86,7 +86,7 @@ public class ValidateDna extends  Thread {
             }
 
        }
-        catch(InterruptedException exc){          
+        catch(/*InterruptedException*/ Exception exc){          
             System.out.println(exc.getMessage());
         }
        
